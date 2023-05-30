@@ -2,3 +2,4 @@
 0 0 * * * defaults write com.apple.dock persistent-apps -array
 0 0 * * * cd "${HOME}/.aliases" && git pull o master && source .aliases
 0 0 * * * cd "${HOME}/.env" && git pull o master && source .env
+0 0 * * * cd "${HOME}/crontab" && git pull o master && cat crontab | crontab -
